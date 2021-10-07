@@ -1,5 +1,6 @@
 const video = document.getElementById('video');
 const debug = document.getElementById('debug');
+const warning = document.getElementById('warning');
 const virus = new Image();
 const facePoint = [];
 
@@ -32,9 +33,6 @@ function average(array) {
     return sum / array.length
 }
 
-
-
-
 video.addEventListener('play', () => {
     console.log('video started');
 
@@ -62,11 +60,13 @@ video.addEventListener('play', () => {
             facePoint[i] = ar;
             debug.innerHTML = average(facePoint[i]);
 
-            if (average(facePoint[i]) > .85) {
+            if (average(facePoint[i]) > .80) {
                 context.drawImage(virus, face._box._x, face._box._y, face._box._width, face._box._height);
-            }    
+                warning.classList.remove("hidden");
+            } else {
+                warning.classList.add("hidden");
+            }
         });
-
 
 
 

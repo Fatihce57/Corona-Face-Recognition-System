@@ -19,3 +19,17 @@ body{
 canvas{
     position: absolute;
 }
+
+#warning{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    background: red;
+    width: 100%;
+    color:white;
+    text-align: center;
+}
+
+#warning.hidden{
+    display: none;
+}
