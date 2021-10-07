@@ -21,10 +21,7 @@ Promise.all(
     )
 );
 
-
-
 /////////FACE RECOGNITION////////////////
-
 function average(array) {
     var sum = 0;
     for (var i = 0; i < array.length; i++) {
@@ -43,15 +40,11 @@ video.addEventListener('play', () => {
     const displaySize = { width: canvas.width, height: canvas.height };
     faceapi.matchDimensions(canvas, displaySize);
 
-
     setInterval(async () => {
         const detections = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions());
         context.clearRect(0, 0, canvas.width, canvas.height);
 
         detections.forEach((face, i) => {
-
-
-
             let ar = facePoint[i] || new Array();
             ar.push(face._score);
             if (ar.length > 5) {
@@ -60,19 +53,12 @@ video.addEventListener('play', () => {
             facePoint[i] = ar;
             debug.innerHTML = average(facePoint[i]);
 
-            if (average(facePoint[i]) > .80) {
+            if (average(facePoint[i]) > .85) {
                 context.drawImage(virus, face._box._x, face._box._y, face._box._width, face._box._height);
                 warning.classList.remove("hidden");
             } else {
                 warning.classList.add("hidden");
             }
         });
-
-
-
-
-
     }, 100);
-
-
 })

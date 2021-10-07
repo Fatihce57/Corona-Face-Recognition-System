@@ -1,35 +1,35 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
+body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
 
-#debug{
-    position: absolute;
-    z-index: 10;
+#debug {
+  position: absolute;
+  z-index: 10;
 }
 
-canvas{
-    position: absolute;
+canvas {
+  position: absolute;
 }
 
-#warning{
-    position: absolute;
-    bottom: 0;
-    padding: 2rem;
-    background: red;
-    width: 100%;
-    color:white;
-    text-align: center;
+#warning {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  background: red;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
-#warning.hidden{
-    display: none;
+#warning.hidden {
+  display: none;
 }
