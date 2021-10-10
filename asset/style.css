@@ -11,6 +11,19 @@ body {
   padding: 2rem;
 }
 
+.title {
+  position: absolute;
+  bottom: 30%;
+  padding: 2rem;
+  background: rgb(60, 155, 192);
+  color: white;
+  text-align: center;
+}
+
+#video{
+  border: 25px solid rgb(0, 0, 0)
+}
+
 #debug {
   position: absolute;
   z-index: 10;
