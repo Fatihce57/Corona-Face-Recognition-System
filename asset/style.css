@@ -9,6 +9,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem;
+  background-color: rgb(53, 49, 49);
 }
 
 .title {
@@ -21,7 +22,9 @@ body {
 }
 
 #video{
-  border: 25px solid rgb(0, 0, 0)
+  border: 25px solid rgb(0, 0, 0);
+  width:610px;
+  height:470px;
 }
 
 #debug {
