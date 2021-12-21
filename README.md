@@ -1,5 +1,7 @@
-https://justadudewhohacks.github.io/face-api.js/docs/index.html
+### Information:
+We need to wear masks during the corona time. So how about finding those who don't? Let's find them and warn them.
 
-### You can see Demo here
+### Technologies:
+HTML/CSS, JavaScript, Canvas, Face Api, GitHub, Netlify
 
-https://coronaalarm.netlify.app/
+<a href="https://coronaalarm.netlify.app/" style="color:red" >You can see Demo here </a>
